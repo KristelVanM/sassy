@@ -8,12 +8,12 @@ body {
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-attachment: fixed
-}
+} /*gedeeltelijk gekopieerd behalve kleur font en bg*/
 
 article {
     display: flex;
     flex-wrap: wrap
-}
+} /*gekopieerd*/
 
 
 article section {
@@ -28,12 +28,12 @@ article section {
      clear: both;
      overflow: auto;
      box-sizing: border-box;
- }
+ } /*gekopieerd en mixin toegepast op box-shadow*/
 
 article section#selling-points {
     flex-grow: 2;
     flex-basis: 100%
-}
+}/*gekopieerd*/
 
 article code {
     background: #000;

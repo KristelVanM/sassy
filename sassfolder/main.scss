@@ -1,5 +1,8 @@
 @import './red';
 @import './variables';
+@function padding ($padding-name) {
+    @return map-get($paddingS, $psection)
+}
 
 @mixin boxshadow {
     -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
@@ -19,20 +22,20 @@ background-image: radial-gradient(#fff, rgba(255, 255, 255, 0.2) 2px, transparen
 
 article {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    section {
+        @include boxshadow;
+         flex-grow: 1;
+         flex-basis: 45%;
+         border: 1px silver solid;
+         padding: map-get($paddingS, "psection" );
+         margin: 16px;
+         clear: both;
+         overflow: auto;
+         box-sizing: border-box;
+     }
 }
 
-article section {
-   @include boxshadow;
-    flex-grow: 1;
-    flex-basis: 45%;
-    border: 1px silver solid;
-padding: map-get($paddingS, "psection" );
-    margin: 16px;
-    clear: both;
-    overflow: auto;
-    box-sizing: border-box;
-}
 article section#selling-points {
     flex-grow: 2;
     flex-basis: 100%
@@ -52,6 +55,39 @@ article code {
     padding: map-get($paddingS, "pcodesnips");
     display: block;
     word-wrap: break-word;
+    &.before {
+        float: left;
+        width: 40%
+    }
+    
 }
 
+article code.after {
+    float: right;
+    width: 40%
+}
 
+.success {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #2748B3;
+    background-color: #000;
+    width: 100%;
+    background-color: green
+}
+
+.error {
+    @extend .success ;
+    background-color: red
+}
+
+.warning {
+    background-color: orange
+}
+
+h6 {
+    text-align: center;
+    font-size: 2em;
+    padding: 16px*2;
+    margin-bottom: 0px
+}
