@@ -13,6 +13,25 @@ body {
   background-attachment: fixed;
 }
 
+li {
+  list-style-type: none;
+}
+
+#redpill {
+  font-weight: bold;
+  background-color: red;
+  width: 10em;
+  text-decoration: none;
+}
+
+#bluepill {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  background-color: royalblue;
+  width: 10em;
+  text-decoration: none;
+}
+
 article {
   display: -webkit-box;
   display: -ms-flexbox;
