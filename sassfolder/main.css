@@ -46,11 +46,10 @@ article section#selling-points {
       flex-basis: 100%;
 }
 
-/*dit verdubbelt de lengte van de box*/
 article code {
-  background: #000;
+  color: yellowgreen;
+  background-color: #a56e6e;
   border: 1px solid #ddd;
-  color: #666;
   page-break-inside: avoid;
   font-family: monospace;
   font-size: 15px;

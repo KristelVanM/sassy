@@ -36,12 +36,12 @@ padding: map-get($paddingS, "psection" );
 article section#selling-points {
     flex-grow: 2;
     flex-basis: 100%
-} /*dit verdubbelt de lengte van de box*/
+} 
 
 article code {
-    background: #000;
-    border: 1px solid #ddd;
-    color: #666;
+    color: yellowgreen;
+    background-color: $code-bg;
+    border:1px solid #ddd;
     page-break-inside: avoid;
     font-family: monospace;
     font-size: 15px;
@@ -49,7 +49,7 @@ article code {
     margin-bottom: 1.6em;
     max-width: 100%;
     overflow: auto;
-    padding: map-get($paddingS, "pcodesnips" );
+    padding: map-get($paddingS, "pcodesnips");
     display: block;
     word-wrap: break-word;
 }
